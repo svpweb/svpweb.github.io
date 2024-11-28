@@ -1,0 +1,406 @@
+/*----------------------------------------*/
+/*------------ GENERAL RESET -------------*/
+/*----------------------------------------*/
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: "Poppins", sans-serif;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	min-height: 100vh;
+	background: url("Images/Untitled-1.png") no-repeat center center fixed;
+	background-size: cover;
+	background-color: #357abd;
+	color: #fff;
+	user-select: none;
+	-webkit-user-select: none; /* For Safari */
+	-moz-user-select: none; /* For Firefox */
+	-ms-user-select: none; /* For Internet Explorer */
+}
+/*---------------------------------------------*/
+/*---------- CTA BUTTON BASE STYLING ----------*/
+/*---------------------------------------------*/
+.cta-button {
+	display: inline-flex;
+	align-items: center;
+	padding: 12px 20px;
+	margin-top: 15px; /* Space between <p> and the button */
+	background-color: #e40046; /* Adjust this color to match the pink */
+	color: #fff;
+	font-size: 1em;
+	font-weight: bold;
+	text-decoration: none;
+	border-radius: 4px;
+	transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+	background-color: #c3003a; /* Slightly darker pink for hover */
+}
+
+.cta-button::before {
+	content: "❯"; /* Right-pointing arrow */
+	margin-right: 8px;
+	font-size: 1.2em;
+}
+.header {
+	text-align: center;
+	padding: 20px;
+	margin-bottom: 20px;
+}
+
+.logo {
+	width: 200px;
+	margin-bottom: 6px;
+	padding-bottom: 30px;
+}
+/*------------------------------------------*/
+/*---------- MODAL POPUP STYLINHG ----------*/
+/*------------------------------------------*/
+.locked-door-modal {
+	display: none; /* Hidden by default */
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+	justify-content: center;
+	align-items: center;
+	z-index: 10;
+}
+
+.modal-content {
+	padding-top: 10px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 20px;
+	background-color: white;
+	padding: 20px;
+	border-radius: 10px;
+	max-width: 350;
+	max-height: 100vh;
+	width: 350px;
+	text-align: center;
+	position: relative;
+	color: #333;
+}
+@media (min-width: 1024px) {
+	.modal-content {
+		max-width: 800px; /* Wider modal on larger screens */
+	}
+}
+
+.modal-content button {
+	background-color: #00e0ff; /* Button color */
+	color: #333;
+	border: none;
+	padding: 10px 20px;
+	border-radius: 4px;
+	cursor: pointer;
+	margin-top: 15px;
+}
+#modal-image {
+	width: 100%; /* Make the image take the full width of the modal */
+	max-width: 300px; /* Set a maximum width for the image */
+	max-height: 500px; /* Set a maximum height for the image */
+	object-fit: cover; /* Scale the image to fit within its container */
+	border-radius: 5px;
+	margin-bottom: 10px;
+}
+#modal-heading {
+	margin-top: 15px;
+	font-size: 1.6em; /* Increase this value to make it larger */
+	font-weight: bold; /* Make it bold if desired */
+	margin-bottom: 5px; /* Add space below the heading */
+	line-height: 1.2;
+}
+
+.modal-content button:hover {
+	background-color: #00cce5; /* Slightly darker hover color */
+}
+
+h1 {
+	font-family: "Poppins", sans-serif;
+	font-size: 50px;
+	margin-bottom: -30px;
+}
+
+h2 {
+	font-family: "Poppins", sans-serif;
+	font-size: 5em;
+	font-weight: 200;
+
+	margin-bottom: 2px;
+}
+
+p {
+	font-family: "Poppins", sans-serif;
+	font-size: 15px;
+	max-width: 700px;
+	margin: auto;
+	opacity: 0.8;
+	margin-bottom: 20px;
+}
+
+/*----------------------------------------*/
+/*----------- CALENDAR STYLING -----------*/
+/*----------------------------------------*/
+.calendar {
+	display: grid;
+	grid-template-columns: repeat(6, 80px);
+	grid-gap: 30px;
+	row-gap: 10px;
+	justify-content: center;
+	padding-bottom: 30px;
+	padding-top: -100px;
+}
+
+.door {
+	width: 100px;
+	height: 100px;
+	background-color: #e40046;
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 1.5em;
+	cursor: pointer;
+	border: 2px solid #fff;
+	border-radius: 5px;
+	position: relative;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+	transition: transform 0.3s ease, background-color 0.3s ease;
+}
+/* Optional: Adjust font size if needed */
+.door span {
+	font-size: 2em; /* Increase font size to match larger doors */
+}
+/*----------------------------------------*/
+/*---------- FINAL DOOR STYLING ----------*/
+/*----------------------------------------*/
+.special-door {
+	grid-column: span 6; /* Spans 6 columns */
+	width: 650px;
+	height: 100px; /* Match other doors' height */
+	font-size: 2.5em; /* Larger font size for emphasis */
+	background-color: #b6d2fc; /* Different color if desired */
+	color: #333;
+}
+.door:nth-child(even) {
+	background-color: #418af7;
+}
+
+.door:hover {
+	background-color: #b6d2fc;
+	transform: scale(1.05);
+	color: #333;
+	font-weight: 300;
+}
+.door:nth-child(even):hover {
+	background-color: #b6d2fc; /* Different color if desired */
+	color: #333;
+}
+
+/*----------------------------------------*/
+/*------------ MODAL STYLING -------------*/
+/*----------------------------------------*/
+.modal {
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	background-color: rgba(0, 0, 0, 0.5);
+	justify-content: center;
+	align-items: center;
+	z-index: 10;
+}
+
+.close-btn {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	cursor: pointer;
+	font-size: 2em; /* Increase the font size */
+	color: #333;
+	background: none; /* Remove any background */
+	border: none; /* Remove any border */
+	padding: 5px; /* Add padding for a larger clickable area */
+	line-height: 1;
+	padding-bottom: 4px;
+}
+
+.close-btn:hover {
+	color: #e40046; /* Change color on hover */
+}
+
+#modal-link {
+	display: inline-block;
+	padding: 12px 20px;
+	background-color: #e40046; /* Pink button color */
+	color: #fff;
+	font-size: 1em;
+	font-weight: bold;
+	text-decoration: none;
+	border-radius: 4px;
+	transition: background-color 0.3s;
+	margin-top: -15px; /* Space above the button */
+}
+
+#modal-link:hover {
+	background-color: #c3003a; /* Slightly darker pink on hover */
+}
+
+#modal-link:hover {
+	text-decoration: underline;
+}
+#modal-description p {
+	margin: 0 0 10px; /* Adds spacing between paragraphs */
+	text-align: left; /* Aligns the text to the left */
+	line-height: 1.5; /* Adjusts line spacing */
+}
+.door .door-context {
+	font: poppins;
+	size: 16px;
+}
+
+img {
+	pointer-events: none;
+}
+/*---------------------------------------------*/
+/*---------- SUPPORT SECTION STYLING ----------*/
+/*---------------------------------------------*/
+/* CTA Button and Text Section */
+.support-section {
+	display: flex;
+	align-items: flex-start; /* Aligns button with the top of the text */
+	max-width: 900px; /* Adjust as needed to match the right alignment with the emoji */
+	gap: 10px; /* Space between the paragraph and button */
+	margin-top: 10px; /* Adjust spacing below the heading */
+	margin-left: -20px; /* Move the section to the left */
+}
+
+.support-section p {
+	margin: 0; /* Reset default margin */
+	font-size: 1.4em;
+	flex: 1; /* Allows the paragraph to take available space */
+	text-align: left;
+}
+
+/* CTA Button */
+.cta-button {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	padding: 10px 20px;
+	background-color: #e40046;
+	color: #fff;
+	font-size: 1.6em;
+	font-weight: bold;
+	text-decoration: none;
+	border-radius: 4px;
+	transition: background-color 0.3s;
+	margin-left: auto; /* Aligns the button to the far right */
+	margin-top: -5px;
+}
+
+.cta-button:hover {
+	background-color: #c3003a;
+}
+
+/* Styling for the white box container */
+.info-box {
+	background-color: #fff; /* White background like the special door */
+	color: #333; /* Text color */
+	border-radius: 5px; /* Same rounded corners as the doors */
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds a shadow effect */
+	padding: 20px; /* Add padding around the content */
+	display: flex;
+	align-items: center;
+	gap: 20px; /* Space between the paragraph and button */
+	max-width: 850px; /* Match the width of the special door */
+	margin-top: 20px; /* Add spacing from the elements above */
+}
+
+.info-box p {
+	font-size: 1.4em;
+	margin: 0;
+	flex: 1; /* Makes the paragraph take up remaining space */
+}
+
+/* Button styling inside .info-box */
+.info-box {
+	background-color: #e40046; /* Same pink color as the Donate button */
+	color: #fff;
+	padding: 12px 20px;
+	border-radius: 4px;
+	font-size: 0.9em;
+	font-weight: bold;
+	text-decoration: none;
+	transition: background-color 0.3s;
+	text-align: left;
+	line-height: 1.6em;
+}
+.cta-button {
+	background-color: #fff; /* Same pink color as the Donate button */
+	color: #e40046;
+	padding: 12px 20px;
+	border-radius: 4px;
+	font-size: 1.6em;
+	font-weight: bold;
+	text-decoration: none;
+	transition: background-color 0.3s;
+	padding: 10px, 10px, 10px, 10px;
+}
+.info-box .cta-button:hover {
+	color: #333;
+	background-color: #fff;
+}
+/*----------------------------------------------------------------------------------------*
+/*---------------------------------------- FOOTER ----------------------------------------*/
+/*----------------------------------------------------------------------------------------*/
+/*----------------------------------------*/
+/*---------- SOCIAL MEDIA ICONS ----------*/
+/*----------------------------------------*/
+.social-media {
+	display: flex;
+	justify-content: center; /* Centers the icons horizontally */
+	gap: 10px; /* Space between each icon */
+	margin-top: 20px;
+}
+
+.social-media .social-icon img {
+	width: 25px; /* Adjust size as needed */
+	height: 25px;
+	transition: transform 0.3s;
+}
+
+.social-media .social-icon img:hover {
+	transform: scale(1.2); /* Slightly enlarge on hover */
+}
+/*----------------------------------------------*/
+/*---------- HOMEPAGE LINK TO WEBSITE ----------*/
+/*----------------------------------------------*/
+.homepage-link {
+	text-align: center;
+	margin-top: 10px;
+}
+
+.homepage-link a {
+	color: #fff; /* Same pink as the CTA button */
+	font-size: 1em;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.homepage-link a:hover {
+	text-decoration: underline;
+}

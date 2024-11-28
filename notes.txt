@@ -1,0 +1,12 @@
+<!-- ADVENT CALENDAR PROJECT -->
+
+.. TO DO
+
+- Remove the 127.00 message 'cannot unlock door'
+- Figure out how to unlock each day
+- How to add images/links? ==//
+
+.. TO add
+- Social media buttons - 
+- Donate Now buttons - 
+

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Advent Calendar</title>
+		<link rel="stylesheet" href="style.css" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
+
+	<body>
+		<div class="header">
+			<img src="Images/svp_logo_white.png" alt="Logo" class="logo" />
+			<h1>Doors of Hope</h1>
+			<h2>Advent Calendar 2024 🎄</h2>
+			<div class="info-box">
+				<p>
+					Your generosity and support is vital for us to continue our <br />
+					work and keep the Doors of Hope open this Christmas 🤍
+				</p>
+				<a href="http://fundraising.svp.org.uk/doorsofhope " class="cta-button"
+					>Donate now</a
+				>
+			</div>
+			<!-- 	<div class="support-section">
+					<p>It is your support that makes this possible every day, and <br> right now, the generosity of people like you is vital to our work.</p>
+					<a href="#" class="cta-button">Donate now</a>
+			</div> -->
+			<!--
+        
+				<strong
+					>Welcome to our 2024 Advent Calendar! This Christmas season, join us
+					each day as we reveal a new facet of SVP and the incredible work we do
+					to support those in need.</strong
+				> -->
+
+			<!--
+			<a href="#" class="cta-button">Donate now</a>-->
+		</div>
+
+		<div class="calendar">
+			<!-- Doors for each day -->
+			<div class="door" data-day="1">1</div>
+			<div class="door" data-day="2">2</div>
+			<div class="door" data-day="3">3</div>
+			<div class="door" data-day="4">4</div>
+			<div class="door" data-day="5">5</div>
+			<div class="door" data-day="6">6</div>
+			<div class="door" data-day="7">7</div>
+			<div class="door" data-day="8">8</div>
+			<div class="door" data-day="9">9</div>
+			<div class="door" data-day="10">10</div>
+			<div class="door" data-day="11">11</div>
+			<div class="door" data-day="12">12</div>
+			<div class="door" data-day="13">13</div>
+			<div class="door" data-day="14">14</div>
+			<div class="door" data-day="15">15</div>
+			<div class="door" data-day="16">16</div>
+			<div class="door" data-day="17">17</div>
+			<div class="door" data-day="18">18</div>
+			<div class="door" data-day="19">19</div>
+			<div class="door" data-day="20">20</div>
+			<div class="door" data-day="21">21</div>
+			<div class="door" data-day="22">22</div>
+			<div class="door" data-day="23">23</div>
+			<div class="door" data-day="24">24</div>
+			<div class="door special-door" data-day="25">
+				25 - Merry Christmas! 🎄
+			</div>
+		</div>
+
+		<!-- Popup Modal -->
+		<div class="modal" id="modal">
+			<div class="modal-content">
+				<span class="close-btn">&times;</span>
+				<h3 id="modal-heading"></h3>
+				<p id="modal-text"></p>
+
+				<!-- New heading element -->
+				<img src="" alt="Promotion Image" id="modal-image" />
+				<p id="modal-text"></p>
+				<p id="modal-description"></p>
+				<!-- New description element -->
+				<a href="#" id="modal-link" target="_blank"></a>
+			</div>
+		</div>
+		<!-- Custom Modal Popup for Locked Door Message -->
+		<div class="locked-door-modal" id="lockedDoorModal">
+			<div class="modal-content">
+				<p>You can't open this door yet!</p>
+				<button id="closeModalBtn">OK</button>
+			</div>
+		</div>
+
+		<script src="script.js"></script>
+	</body>
+	<div class="social-container">
+		<div class="social-media">
+			<!-- Social Media Icons -->
+			<a
+				href="https://www.facebook.com/SVPenglandandwales/?locale=en_GB"
+				target="_blank"
+				class="social-icon"
+			>
+				<img src="Images/Icons/facebook.png" alt="Facebook" />
+			</a>
+			<a
+				href="https://x.com/svpenglandwales"
+				target="_blank"
+				class="social-icon"
+			>
+				<img src="Images/Icons/twitter-alt.png" alt="Twitter" />
+			</a>
+			<a
+				href="https://www.instagram.com/svpenglandwales/?hl=en"
+				target="_blank"
+				class="social-icon"
+			>
+				<img src="Images/Icons/instagram.png" alt="Instagram" />
+			</a>
+		</div>
+		<p class="homepage-link">
+			Visit our website at:
+			<a href="https://yourhomepage.com" target="_blank">www.svp.org.uk</a>
+		</p>
+	</div>
+</html>
