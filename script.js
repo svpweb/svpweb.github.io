@@ -135,7 +135,7 @@ const promotions = {
 	},
 	13: {
 		heading: "Youth - Mini Vinnies 🚀",
-		text: "8th December 2024",
+		text: "13th December 2024",
 		image: "Images/Doors/door13.jpg",
 		description: `
 			<p><b>The Mini Vinnies are the youngest members of the St Vincent de Paul Society (SVP)</b>, living out their mission of 'see, think, do' to tackle poverty in all its forms by providing practical assistance to people in need in their community.<p>
@@ -210,7 +210,7 @@ const promotions = {
 		text: "20th December 2024",
 		image: "Images/Doors/door20.jpg",
 		description: `
-		<p><b>Social justice is at the core of our mission.</b>We use our insight and experience on the ground to find solutions to complex policy problems affecting people.</p>
+		<p><b>Social justice is at the core of our mission. </b>We use our insight and experience on the ground to find solutions to complex policy problems affecting people.</p>
 		<p>We work with the Government and other groups to tackle the root causes of poverty and campaign for a more just system.</p>`,
 		link: "https://svp.org.uk/social-justice-svp",
 		linkText: "Learn more about our Social Justice  in the UK", // New link text
