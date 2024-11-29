@@ -89,7 +89,7 @@ const promotions = {
 			<p><b>The Deaf Centre is a wonderful, inclusive centre with activities offered to deaf, hard of hearing and hearing communities.</b></p>
 			<p>These include advice and employability sessions, art groups and enrichment scheme during holidays for children, teens, and families.</p>`,
 		link: "https://svp.org.uk/microsite/svp-deaf-centre-newcastle",
-		linkText: "Learn more about SVP Brighton", // New link text
+		linkText: "Learn more about Deaf Centre SVP", // New link text
 	},
 	9: {
 		heading: "Our work in Prisons 💛",
