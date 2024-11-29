@@ -415,3 +415,7 @@ img {
 .parent-container {
 	overflow: visible; /* Ensure it's not hidden */
 }
+embed,
+iframe {
+	pointer-events: auto;
+}
