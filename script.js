@@ -88,7 +88,7 @@ const promotions = {
 		description: `
 			<p><b>The Deaf Centre is a wonderful, inclusive centre with activities offered to deaf, hard of hearing and hearing communities.</b></p>
 			<p>These include advice and employability sessions, art groups and enrichment scheme during holidays for children, teens, and families.</p>`,
-		link: "https://svp.org.uk/st-vincents-centre-brighton-tower-house",
+		link: "https://svp.org.uk/microsite/svp-deaf-centre-newcastle",
 		linkText: "Learn more about SVP Brighton", // New link text
 	},
 	9: {
@@ -130,7 +130,7 @@ const promotions = {
 			<p><b>Chorley Buddies offer 4 food clubs each week in community venues.</b> They are a great way to stretch budgets, get great fresh and tinned food and make sure food does not end up in landfill.</p>
 			<p>There are also activities provided for individuals and families that join the community together and provide a space to try new things and make new friends.</p>`,
 		link: "https://svp.org.uk/microsite/st-vincents-chorley-buddies",
-		linkText: "Learn more about SVP Brighton", // New link text
+		linkText: "Learn more about SVP Chorley", // New link text
 		// Continue adding entries up to day 25
 	},
 	13: {
@@ -150,7 +150,7 @@ const promotions = {
 		description: `
 			<p><b>Every year the SVP supports thousands of refugees and people seeking asylum.</b></p>
 			<p>In addition to providing material and practical support, we campaign for a compassionate and humane asylum system. Through our advocacy work, we challenge unjust polices and systems.</p>`,
-		link: "https://svp.org.uk/st-vincents-centre-brighton-tower-house",
+		link: "https://svp.org.uk/refugees-and-people-seeking-asylum",
 		linkText:
 			"Learn more about our Social Justice work with Migrants and Refugees", // New link text
 	},
