@@ -92,14 +92,14 @@ const promotions = {
 		linkText: "Learn more about SVP Brighton", // New link text
 	},
 	9: {
-		heading: "SHOP - Dudley Hill",
+		heading: "Our work in Prisons 💛",
 		text: "9th December 2024",
-		image: "Images/Doors/door7.jpg",
+		image: "Images/Doors/door9.jpg",
 		description: `
-			<p><b>Tower House caters for the older community in the Brighton area.</b></p>
-			<p>The place is alive with services and activities to support people growing older. There is everything from craft groups, dementia care, carers groups and services to encourage good health and wellbeing.</p>`,
-		link: "https://svp.org.uk/st-vincents-centre-brighton-tower-house",
-		linkText: "Learn more about SVP Brighton", // New link text
+			<p><b>We turn concern into action by working with prisons. This can take the form of visiting or writing letters to people in prison. Spending time with people is our greatest gift.</b></p>
+			<p>SVP groups have also worked with probationary services by providing clothes those leaving prison, as well as supporting ex-offenders. </p>`,
+		link: "https://svp.org.uk/work-prisons",
+		linkText: "Learn more about our work in prisons", // New link text
 	},
 	10: {
 		heading: "St Vincent's Southend 💙",
