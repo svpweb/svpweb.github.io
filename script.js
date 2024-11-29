@@ -356,3 +356,6 @@ document.querySelectorAll(".door").forEach((door) => {
 ///-------------------------------------------------------///
 ///---------- Disable Right Click and Drag ---------------///
 ///-------------------------------------------------------///
+document.getElementById("cta-button").addEventListener("click", () => {
+	console.log("CTA button clicked!");
+});
