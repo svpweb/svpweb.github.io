@@ -404,3 +404,7 @@ img {
 .homepage-link a:hover {
 	text-decoration: underline;
 }
+#cta-button {
+	position: relative;
+	z-index: 10;
+}
