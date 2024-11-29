@@ -16,20 +16,24 @@ const promotions = {
 		linkText: "Donate now", // New link text
 	},
 	2: {
-		heading: "Welcome to Day 2",
-		text: "2nd December!",
-		image: "Images/Door2.jpeg",
-		description: "Unwrap another surprise today!",
-		link: "https://example.com/day2",
-		linkText: "Donate now", // New link text
+		heading: "It's not too late to Shop for Christmas!🎅🏽",
+		text: "2nd December! 2024",
+		image: "Images/Doors/door2.png",
+		description: `
+		<p><b>Still looking for the perfect gift? 🛍️ Visit the SVP’s online store to find beautiful Christmas cards, thoughtful presents, and more.</b></p>
+		<p>Every purchase helps support our vital work, spreading hope and joy this festive season.</p>`,
+		link: "https://stvincentsshops.com/",
+		linkText: "Shop now", // New link text
 	},
 	3: {
-		heading: "Welcome to Day 3",
-		text: "3rd December!",
-		image: "Images/Door3.jpeg",
-		description: "Enjoy this holiday treat!",
-		link: "https://example.com/day3",
-		linkText: "Donate now", // New link text
+		heading: "Creating Change - Mrs Chana's Story 💙",
+		text: "3rd December 2024",
+		image: "Images/Doors/door3.jpg",
+		description: `
+		<p><b>Following the passing of her husband a few years ago, Mrs Chana became suddenly swamped in debt she had no knowledge of and could not overcome alone. Our friendly team and financial experts at Bradford helped paved the way for her to slowly manage a difficult debt crisis.</b></p>
+		<p>Now, Mrs Chana has recovered some stability, despite the loss of her husband, and from now on wants to be happy by giving back to the community that helped her in her time of great need.</p>`,
+		link: "https://youtu.be/PqJ4sGe7fv8?si=GTdF97eqq2HBmL6r",
+		linkText: "Watch Mrs Chana's Story", // New link text
 	},
 	4: {
 		//Membership
@@ -171,20 +175,24 @@ const promotions = {
 		linkText: "Learn more about St Vincent's Newcastle", // New link text
 	},
 	17: {
-		heading: "Working with Prisons 💛",
+		heading: "Debt Advice - why Luke loves helping our Beneficiaries💛",
 		text: "17th December 2024",
 		image: "Images/Doors/door17.jpg",
-		description: "Need copy",
-		link: "https://svp.org.uk/st-vincents-centre-brighton-tower-house",
-		linkText: "Learn more about our work in Prisons", // New link text
+		description: `
+				<p><b>Luke is one our top debt advisors at SVP who tells us about the vital work he does and sees first-hand with individuals who come to us for help. </b></p>
+				<p>If there is any way we can help people get control over their lives again to make that weight on their shoulders drop off, then we can, and Luke shares with us how rewarding that can be.</p>`,
+		link: "https://youtu.be/APFgtWANpBg?si=6z_2O6GVmNRVzwnC",
+		linkText: "Watch the video", // New link text
 	},
 	18: {
 		heading: "Supported Housing 🏠",
 		text: "18th December 2024",
 		image: "Images/Doors/door18.jpg",
-		description: "NEED COPY",
-		link: "https://svp.org.uk/st-vincents-centre-brighton-tower-house",
-		linkText: "Learn more about SVP Brighton", // New link text
+		description: `
+		<p><b>Our temporary and emergency accommodation provides warm, safe and welcoming homes for families who are homeless. Every family has a story behind their homelessness, they may have fled violence or abused, had financial problems or experienced a family breakdown.</b></p>
+		<p>The experience that has led to homelessness is often particular difficult for children. All our properties provide space for to children play, learn and develop.🏠 </p>`,
+		link: "http://fundraising.svp.org.uk/doorsofhope",
+		linkText: "Donate now to help us continue to help Families in need", // New link text
 	},
 	19: {
 		heading: "Sheffield Furniture Project - SVP 💙",
@@ -337,13 +345,11 @@ document.querySelectorAll(".door").forEach((door) => {
 	door.addEventListener("click", () => {
 		const day = parseInt(door.getAttribute("data-day"), 10);
 		const today = new Date().getDate();
-
-		// Uncomment the following condition to enable door lock by date
-		// if (day <= today) {
-		openModal(day); // Show the content for that day
-		// } else {
-		//	showLockedDoorModal(); // Show the locked door message if it's not available
-		//}
+		if (day <= today) {
+			openModal(day); // Show the content for that day
+		} else {
+			showLockedDoorModal(); // Show the locked door message if it's not available
+		}
 	});
 });
 
