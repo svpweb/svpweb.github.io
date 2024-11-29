@@ -356,13 +356,3 @@ document.querySelectorAll(".door").forEach((door) => {
 ///-------------------------------------------------------///
 ///---------- Disable Right Click and Drag ---------------///
 ///-------------------------------------------------------///
-
-// Disable right-click on the entire page
-document.addEventListener("contextmenu", (event) => {
-	event.preventDefault();
-});
-
-// Disable dragging for all buttons on the page
-document.querySelectorAll("button").forEach((button) => {
-	button.setAttribute("draggable", "false");
-});
