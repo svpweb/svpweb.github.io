@@ -406,5 +406,12 @@ img {
 }
 #cta-button {
 	position: relative;
-	z-index: 10;
+	z-index: 1000;
+	pointer-events: auto;
+	display: inline-block;
+	width: auto; /* Or a specific width */
+	height: auto; /* Or a specific height */
+}
+.parent-container {
+	overflow: visible; /* Ensure it's not hidden */
 }
