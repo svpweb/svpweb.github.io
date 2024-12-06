@@ -64,7 +64,7 @@ const promotions = {
 		text: "6th December 2024",
 		image: "Images/Doors/door6.png",
 		description: `
-		<p><b>Twinning is the way in SVP England and Wales partners with SVP groups in other countries to provide support.</b></p>
+		<p><b>Twinning is the way in which SVP England and Wales partners with SVP groups in other countries to provide support.</b></p>
 		<p>We are currently “twinned” with the SVP in India, Sudan, South Sudan, Grenada, Guyana and Romania. Each country team tailors their work to the needs of the local community.</p>`,
 		link: "https://svp.org.uk/twinning-and-overseas-aid",
 		linkText: "Learn more about Twinning", // New link text
